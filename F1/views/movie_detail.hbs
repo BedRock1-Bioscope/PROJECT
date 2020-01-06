@@ -79,7 +79,6 @@ body{
 <body>
       <div class="logo">
       <a href="/"><img class="logo"src="https://fontmeme.com/permalink/191224/ea20a6dc7de255ad46c8e77cfa588258.png" alt="netflix-font" border="0"></a>
-    <!--    <a  id="logo" href="/"><img src="https://fontmeme.com/permalink/191223/f1f021f481209004ad0adf41b3f53df1.png" alt="netflix-font" border="0"></a>-->
     </div>
 
 <div class="container movie-details">
@@ -93,8 +92,6 @@ body{
            <h4>Language:</h4>{{movie.mov_language}}<br><br>
            <h4>Release Date:</h4>{{movie.mov_reldate}}<br><br>
            <h4>Plot:</h4>{{movie.mov_plot}}<br><br>
-           <!--<h4>Critics Review:</h4>{{movie.mov_critics}}<br><br><br>-->
-           
            <a href="{{movie.url}}/update"><i class="fa fa-pencil-square-o"></i>Update</a>
            <form action="{{movie.url}}/delete" method="post" name="deleteform">
            <input class="form-control" id="id" type="hidden" name="id" required="true" , value={{movie._id}}> </input>
@@ -118,17 +115,11 @@ function myConfirm() {
   if (result==true) {
       form1.submit();
       alert("Movie deleted Successfully!");
-    //return true;
+    
   } else {
-      //alert("Operation Rollbacked Successfully!");
-   //return false;
+      
   }
-}/*
-
-
-function delete(){
-    alert("movie deleted successfully..!");
-}*/
+}
 </script>
 
 
