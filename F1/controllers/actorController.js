@@ -161,7 +161,16 @@ exports.actor_detail = function(req, res, next) {
                 }
               );
   
-      
+      /*  if (!errors.isEmpty()) {
+            // There are errors. Render form again with sanitized values/error messages.
+            async.parallel(function(err, results) {
+                if (err) { return next(err); }
+                res.render('actor_form', { title: 'Update Actor', actor: actor});
+            });
+            return;
+        }
+        else {  */
+            // Data from form is valid. Update the record.
             Actor.findByIdAndUpdate(req.params.id, actor, {}, function (err,theactor) {
                 if (err) { return next(err); }
                    // Successful - redirect to director detail page.
@@ -201,7 +210,7 @@ exports.actor_detail = function(req, res, next) {
     }, function(err, results) {
         if (err) { return next(err); }
         // Success
-            // Delete object and redirect to the list of actor.
+            
             Actor.findByIdAndRemove(req.body.id, function deleteActor(err) {
                 if (err) { return next(err); }
                 // Success - got to actor list.
