@@ -16,11 +16,6 @@ body{
 }
 .logo{
     overflow: hidden;
- /* border-bottom-style: solid;
-  border-bottom-color: #FF6A00;
-  border-width: thin;
-  margin-bottom: 50px;
-  margin-top: 30px;*/
   padding: 20px;
 }
  
@@ -95,25 +90,7 @@ body{
          <!--  <h4>Thumbnail:</h4>{{director.dir_thumb}}<br><br><br>-->
            
            <a href="{{director.url}}/update"><i class="fa fa-pencil-square-o"></i>Update</a>
-       <!--    <form action="{{director.url}}/delete" method="post">
-           <input class="form-control" id="id" type="hidden" name="id" required="true" , value={{director._id}}> </input>
-           <button type="submit" class="delete-btn" onclick="delete()"><i class="fa fa-trash"></i> delete</button>
-           </form>
-           <br>
-           <br>
-            
-        </div>
-        <div class="col-md-6">
-            <img src="{{director.dir_thumb}}" onerror=this.src="https://image.shutterstock.com/image-vector/vector-graphic-no-thumbnail-symbol-260nw-1391095985.jpg" class="movie-img">
-        </div>
-    </div>
-</div>
-<script>
-function delete(){
-    alert("movie deleted successfully..!");
-}
-</script>
--->
+
 
 
 
@@ -141,8 +118,6 @@ function myConfirm() {
       alert("{{movie.mov_name}} is deleted successfully!");
     //return true;
   } else {
-      //alert("operation rollbacked uccessfully!");
-   //return false;
   }
 }
 </script>
