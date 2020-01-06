@@ -82,18 +82,6 @@ exports.actor_list = function(req, res, next) {
   }
   
 }; 
-  /*  if(req.query.search) {
-        const regex = new RegExp(escapeRegex(req.query.search), 'gi');
-        Actor.find({act_name:regex}, 'act_name act_thumb ')
-        //.populate('mov_dir')
-        .exec(function (err, list_actor) {
-          if (err) {return next(err)} 
-          else {
-                // Successful, so render
-                res.render('actor_list', { title: 'Actor List', actor_list:  list_actor});
-            }
-        });*/
-
 
   // Display detail page for a specific actor.
 exports.actor_detail = function(req, res, next) {
