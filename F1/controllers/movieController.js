@@ -54,7 +54,6 @@ exports.movie_detail = function(req, res, next) {
 };
 
 // Handle book create on POST.
-//exports.movie_create_post = function(req, res) {
 exports.movie_create_post=[
   (req, res,next)=>{
 
@@ -79,17 +78,11 @@ exports.movie_create_post=[
   
 movie.save(function (err) {
   if (err) { 
-    //return next(err); 
-    /*return res.status(500).send({
-      success: false,
-      message: 'movie already exist!'
-     
-    });*/
+    
     res.render('movie_form', { title: 'Movie already Exists!'});
   } else{
     res.render('movie_form', { title: 'MOVIE SAVED'});
   }
-     /*   res.send("Movie saved to database"); */
        
     });
 }
