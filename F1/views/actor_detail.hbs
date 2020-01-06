@@ -90,8 +90,7 @@ body{
 <body>
      <div class="logo">
        <a href="/admin/moviehome"><img src="https://fontmeme.com/permalink/191224/ea20a6dc7de255ad46c8e77cfa588258.png" alt="netflix-font" border="0"></a>
-    <!--    <a  id="logo" href="/"><img src="https://fontmeme.com/permalink/191223/f1f021f481209004ad0adf41b3f53df1.png" alt="netflix-font" border="0"></a>-->
-</div>
+    </div>
 
 <div class="container actor-details">
     <div class="row">
@@ -102,9 +101,7 @@ body{
            <h4>About:</h4>{{actor.act_abt}}<br><br>
            <h4>Nationality:</h4>{{actor.act_nat}}<br><br>
            <h4>Awards:</h4>{{actor.act_awards}}<br><br>
-         <!--  <h4>Thumbnail:</h4>{{director.dir_thumb}}<br><br><br>-->
-           
-           <a href="{{actor.url}}/update"><i class="fa fa-pencil-square-o"></i>Update</a>
+        <a href="{{actor.url}}/update"><i class="fa fa-pencil-square-o"></i>Update</a>
            <form action="{{actor.url}}/delete" method="post" name="deleteform">
            <input class="form-control" id="id" type="hidden" name="id" required="true" , value={{actor._id}}> </input>
            <button type="button" class="delete-btn" onclick="myconfirm()"><i class="fa fa-trash"></i> delete</button>
