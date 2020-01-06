@@ -210,7 +210,7 @@ exports.actor_detail = function(req, res, next) {
     }, function(err, results) {
         if (err) { return next(err); }
         // Success
-            
+            // Delete object and redirect to the list of actor.
             Actor.findByIdAndRemove(req.body.id, function deleteActor(err) {
                 if (err) { return next(err); }
                 // Success - got to actor list.
