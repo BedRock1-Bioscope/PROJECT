@@ -92,22 +92,7 @@ exports.actor_list = function(req, res, next) {
                 // Successful, so render
                 res.render('actor_list', { title: 'Actor List', actor_list:  list_actor});
             }
-        });
-      } else {
-
-    Actor.find({}, 'act_name act_thumb act_dob')
-      //.populate('act_dir')
-      .exec(function (err, list_actor) {
-        if (err) {return next(err)} 
-        else {
-              // Successful, so render
-              res.render('actor_list', { title: 'Actor List', actor_list:  list_actor});
-          }
-      });
-    }
-  
-  };
-*/
+        });*/
 
 
   // Display detail page for a specific actor.
