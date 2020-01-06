@@ -44,13 +44,7 @@ body{
     
 
 }
-/*.backbtn .text {
-    margin-left: 1px;
-    font-family: Verdana, serif;
-    font-size: 14px;
-    line-height: 54px;
-    display: none;
-}*/
+
 .backbtn3::before {
     background-image: url(https://www.iconsdb.com/icons/preview/white/plus-xxl.png);
     background-position: center;
@@ -103,13 +97,7 @@ body{
     
 
 }
-/*.backbtn .text {
-    margin-left: 1px;
-    font-family: Verdana, serif;
-    font-size: 14px;
-    line-height: 54px;
-    display: none;
-}*/
+
 .backbtn::before {
     background-image: url(https://www.iconsdb.com/icons/preview/white/arrow-118-xxl.png);
     background-position: center;
@@ -121,15 +109,7 @@ body{
     
 }
 
-/*.backbtn:hover {
-    background-position: 10px;
-    width: 150px;
-    border-radius: 90px;
-    text-decoration: none;
-}
-.backbtn:hover .text {
-    display: block;
-}*/
+
 
 .loginbox{
     width: 620px;   
@@ -262,15 +242,13 @@ h1{
             <input type="text" name="mov_genre" placeholder="Enter Genre" onkeyup="checkregex4()">
             <p>Plot (upto size 800 characters)</p>
             <input type="text" name="mov_plot" placeholder="Enter Plot" size="800" maxlength="800">
-          <!--  <p>Critic Reviews</p>
-            <input type="text" name="mov_critics" placeholder="Enter Critic Reviews">-->
+          
             <p>Thumbnail Link</p>
             <input type="text" name="mov_thumb" placeholder="Enter Thumbnail Link" >
             <br> 
             <input type="button" value="ADD TO MOVIE COLLECTION" onclick="Add()">
             <input type="button" value="RESET" onclick="location.href = '/admin/movie/create';">
-           <!-- <a href="#">Lost your password?</a><br>
-            <a href="#">Don't have an account?</a> -->
+           
         </form>        
     </div>
     <script>
