@@ -294,7 +294,10 @@ input[type=button]{
   <a class="backbtn" href="/admin/movie/create"></a>
   <form id="updateform" method="POST" action="">
   <center><h1>UPDATE ACTOR - {{actor.act_name}}</h1></center>
-
+<!--  <div class="question">
+    <input type="text" name="act_name" value={{actor.act_name}} autocomplete="off" required/>
+    <label>Name</label>
+  </div>-->
   <div class="question">
     <input id="dob" type="date" name="act_dob" value={{actor.act_dob}} required/>
     <label>DOB</label>
@@ -306,23 +309,23 @@ input[type=button]{
   <div class="nat">
     <label><pre>  Nationality</pre></label>
            <select type="text" name="act_nat" value={{actor.act_nat}}>
-   <option disabled="disabled" selected="selected">{{actor.act_nat}}</option>
-  <option value="afghan">Afghan</option>
-  <option value="albanian">Albanian</option>
-  <option value="algerian">Algerian</option>
-  <option value="american">American</option>
-  <option value="andorran">Andorran</option>
-  <option value="angolan">Angolan</option>
-  <option value="antiguans">Antiguans</option>
-  <option value="argentinean">Argentinean</option>
-  <option value="armenian">Armenian</option>
-  <option value="australian">Australian</option>
-  <option value="austrian">Austrian</option>
-  <option value="azerbaijani">Azerbaijani</option>
-  <option value="bahamian">Bahamian</option>
-  <option value="bahraini">Bahraini</option>
-  <option value="bangladeshi">Bangladeshi</option>
-  <option value="barbadian">Barbadian</option>
+        <option disabled="disabled" selected="selected">{{actor.act_nat}}</option>
+        <option value="afghan">Afghan</option>
+        <option value="albanian">Albanian</option>
+        <option value="algerian">Algerian</option>
+        <option value="american">American</option>
+        <option value="andorran">Andorran</option>
+        <option value="angolan">Angolan</option>
+        <option value="antiguans">Antiguans</option>
+        <option value="argentinean">Argentinean</option>
+        <option value="armenian">Armenian</option>
+        <option value="australian">Australian</option>
+        <option value="austrian">Austrian</option>
+        <option value="azerbaijani">Azerbaijani</option>
+        <option value="bahamian">Bahamian</option>
+        <option value="bahraini">Bahraini</option>
+        <option value="bangladeshi">Bangladeshi</option>
+        <option value="barbadian">Barbadian</option>
   <option value="barbudans">Barbudans</option>
   <option value="batswana">Batswana</option>
   <option value="belarusian">Belarusian</option>
