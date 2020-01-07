@@ -108,20 +108,15 @@ body{
 </div>
 <script>
 function myConfirm() {
-    
-
-  var result = confirm("Do You Want To Delete {{movie.mov_name}} ?");
+  var result = confirm("Do you want To Delete {{movie.mov_name}} ?");
     form1=document.forms['deleteform'];
   if (result==true) {
       form1.submit();
-      alert("Movie deleted Successfully!");
-    
+      alert("Movie deleted successfully!");
   } else {
       
   }
 }
 </script>
-
-
 </body>
 </html>
