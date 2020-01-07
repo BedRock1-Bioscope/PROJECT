@@ -44,14 +44,6 @@ exports.actor_create_post = [
           act_thumb: req.body.act_thumb
         }
       );
-   /* movie.save()
-        .then(item => {
-         //  res.send("Movie saved to database"); 
-           res.render('movie_form');
-        })
-        .catch(err => {
-            res.status(400).send("Unable to save to database");
-        });*/
         
 
   // Data from form is valid. Save book.
@@ -68,34 +60,13 @@ exports.actor_create_post = [
       } else{
         res.render('actor_form', { title: 'ACTOR SAVED'});
       }
-         /*   res.send("Movie saved to database"); */
+         
            
         });
 }
   
   ];
 
-
-/*exports.actor_create_post = function(req, res) {
-    var actor = new Actor(
-        {
-            act_name: req.body.act_name,
-            act_dob: req.body.act_dob,
-            act_abt: req.body.act_abt,
-            act_nat: req.body.act_nat,
-            act_awards: req.body.act_awards,
-            act_thumb: req.body.act_thumb
-        }
-      );
-    actor.save()
-        .then(item => {
-          //  res.send("Actor saved to database");  
-          res.render('actor_form');
-        })
-        .catch(err => {
-            res.status(400).send("Unable to save to database");
-        });
-};*/
 
 // Display list of all actor.
 exports.actor_list = function(req, res, next) {
