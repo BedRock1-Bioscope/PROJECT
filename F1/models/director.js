@@ -1,3 +1,4 @@
+//DIRECTOR 
 var mongoose=require('mongoose');
 var uniqueValidator = require('mongoose-unique-validator');
 var DirectorSchema = new mongoose.Schema({
